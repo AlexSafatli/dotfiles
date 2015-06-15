@@ -1,17 +1,14 @@
-.PHONY: copy all scripts
+.PHONY: Linux Darwin all
 OS := $(shell uname)
 
-all: copy scripts
+all: $(OS)
+	cp shell/.[a-zA-Z0-9]* ~
 
-scripts:
-	ifeq $(OS) Darwin # Mac OS X
-		osx/defaults.sh
-	endif
+Darwin:
+	# Mac OS X
+	osx/defaults.sh
+	cp osx/.[a-zA-Z0-9]* ~
 
-copy:
-	ifeq $(OS) Darwin # Mac OS X
-		cp osx/.* ~
-	else # Other Unix System
-		cp linux/.* ~
-	endif
-	cp shell/.* ~
+Linux:
+	# Linux
+	cp linux/.[a-zA-Z0-9]* ~
