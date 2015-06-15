@@ -3,7 +3,7 @@ function ruby_env {
 }
 
 function setup_aliases {
-  alias untar="tar -xzvf"
+  source .aliases
 }
 
 function setup_terminal {
