@@ -1,5 +1,7 @@
 function ruby_env {
+
   if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 }
 
 function setup_terminal {
@@ -22,8 +24,10 @@ function setup_terminal {
 }
 
 function all {
+
   setup_terminal
   ruby_env
+  
 }
 
 all
