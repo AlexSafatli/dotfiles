@@ -20,8 +20,8 @@ if [ $? -eq 0 ]; then \
   else \
     # @5 - Changes to working tree
     echo "'$IRed'"$(__git_ps1 "(%s)"); \
-  fi) '$Cyan$BaseName$ColorOff' \$ "; \
+  fi) '$Black$BaseName$BBlack' >> "; \
 else \
   # @2 - Prompt when not in GIT repo
-  echo "'$Black$BaseName$ColorOff' \$ "; \
-fi)'
+  echo "'$Black$BaseName$BBlack' >> "; \
+fi)'$ColorOff
