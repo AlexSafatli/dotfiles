@@ -1,3 +1,3 @@
 # Mac OS X Bash Profile
 
-source .bashrc # Get all settings.
+source ~/.bashrc # Get all settings.
