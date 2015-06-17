@@ -16,11 +16,11 @@ function setup_terminal {
   export EDITOR=subl # Sublime Text 2
 
   # Source Appropriate Files
-  source .colors # Variables for Bash Prompt Colors
-  source .git-prompt.sh # From Git -- Allows Reading Names of Repo/Branch to PS1
-  source .git-completion.bash # From Git -- Allows Autocompletion
-  source .prompt # Setup PS1 Prompt
-  source .aliases # Terminal Aliases
+  source ~/.colors # Variables for Bash Prompt Colors
+  source ~/.git-prompt.sh # From Git -- Allows Reading Names of Repo/Branch to PS1
+  source ~/.git-completion.bash # From Git -- Allows Autocompletion
+  source ~/.prompt # Setup PS1 Prompt
+  source ~/.aliases # Terminal Aliases
 
 }
 
