@@ -10,7 +10,7 @@
 [alias]
   aa = add -A
   co = checkout
-  cob = checkout -b
+  b = checkout -b
   ec = config --global -e
   up = !git pull --rebase --prune $@ && git submodule update --init --recursive
   cm = !git add -A && git commit -m
