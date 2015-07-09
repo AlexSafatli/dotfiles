@@ -8,9 +8,12 @@
 [push]
 	default = matching
 [alias]
-  aa = add -A
+  upstream = remote add upstream
+  sync = "!git fetch origin -v; git fetch upstream -v; git merge upstream/master"
+  s = status
   co = checkout
-  b = checkout -b
+  new = checkout -b
+  b = branch
   ec = config --global -e
   up = !git pull --rebase --prune $@ && git submodule update --init --recursive
   cm = !git add -A && git commit -m
