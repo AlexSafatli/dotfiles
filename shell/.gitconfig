@@ -9,13 +9,13 @@
 	default = matching
 [alias]
   upstream = remote add upstream
-  sync = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
-  s = status
+  up = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
+  st = status
   co = checkout
   new = checkout -b
   b = branch
   ec = config --global -e
-  up = !"git pull --rebase --prune $@ && git submodule update --init --recursive"
+  sync = !"git pull --rebase --prune $@ && git submodule update --init --recursive"
   cm = !"git add -A && git commit -m"
   wipe = !"git add -A && git commit -qm 'WIPE-SAVEPOINT' && git reset HEAD~1 --hard"
   bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
