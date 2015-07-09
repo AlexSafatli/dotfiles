@@ -13,7 +13,7 @@ function setup_terminal {
   export FIGNORE=.svn
 
   # Default Editor
-  export EDITOR=subl # Sublime Text 2
+  export EDITOR='subl -n -w' # Sublime Text 2
 
   # Source Appropriate Files
   source ~/.colors # Variables for Bash Prompt Colors
