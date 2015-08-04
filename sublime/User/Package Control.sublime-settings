@@ -1,0 +1,14 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"CoffeeScript",
+		"GitGutter",
+		"Package Control",
+		"Ruby Slim",
+		"Sass"
+	]
+}
