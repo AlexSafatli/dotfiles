@@ -1,11 +1,87 @@
 {
+	"extra_file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db"
+	],
+	"extra_folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS"
+	],
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"/Users/AlexSafatli/Repositories/GitHub/watzan/log/development.log",
+		"/Users/AlexSafatli/Repositories/GitHub/watzan/spec/.DS_Store",
+		"/Users/AlexSafatli/Repositories/GitHub/watzan/.DS_Store",
+		"/Users/AlexSafatli/Repositories/GitHub/watzan/app/views/.DS_Store",
+		"/Users/AlexSafatli/Repositories/GitHub/watzan/lib/assets/.DS_Store",
+		"/Users/AlexSafatli/Repositories/GitHub/watzan/.env",
+		"/Users/AlexSafatli/Repositories/GitHub/watzan/app/models/.DS_Store",
+		"/Users/AlexSafatli/Repositories/GitHub/watzan/spec/models/.DS_Store",
+		"/Users/AlexSafatli/Repositories/GitHub/watzan/app/.DS_Store",
+		"/Users/AlexSafatli/Repositories/GitHub/watzan/app/views/shared/.DS_Store",
+		"/Users/AlexSafatli/Repositories/GitHub/watzan/app/views/clients/.DS_Store",
+		"/Users/AlexSafatli/Repositories/GitHub/watzan/spec/models/items/.DS_Store",
+		"/Users/AlexSafatli/Repositories/GitHub/watzan/log/test.log"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"/Users/AlexSafatli/Repositories/GitHub/watzan/tmp",
+		"/Users/AlexSafatli/Repositories/GitHub/watzan/.yardoc"
+	],
 	"font_size": 12.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"rulers":
+	[
+		80
+	],
 	"tab_size": 2,
-	"translate_tabs_to_spaces": true,
-  "rulers": [80]
+	"translate_tabs_to_spaces": true
 }
