@@ -14,8 +14,8 @@ Darwin:
 
 Linux:
 	# Linux
-	cp linux/.[a-zA-Z0-9]* ~
+	-cp linux/.[a-zA-Z0-9]* ~
 	$(eval SUBLIME_PREFS = ~/.config/sublime-text-2/Packages)
 
 Sublime:
-	cp -r sublime/User $(SUBLIME_PREFS)
+	-cp -r sublime/User $(SUBLIME_PREFS)
