@@ -1,7 +1,7 @@
-.PHONY: Linux Darwin Sublime all
+.PHONY: Linux Darwin Sublime assets all
 OS := $(shell uname)
 
-all: $(OS) Sublime
+all: $(OS) Sublime assets
 	cp shell/.[a-zA-Z0-9]* ~
 	cp vendor/.[a-zA-Z0-9]* ~
 
@@ -18,4 +18,9 @@ Linux:
 	$(eval SUBLIME_PREFS = ~/.config/sublime-text-2/Packages)
 
 Sublime:
-	-cp -r sublime/User $(SUBLIME_PREFS)
+	-cp -r sublime/User $(SUBLIME_PREFS)	
+
+assets:
+	-mkdir ~/.commit-messages/
+	cp assets/random-commit-msg.py /usr/local/bin/random-commit
+	cp assets/anime ~/.commit-messages/
