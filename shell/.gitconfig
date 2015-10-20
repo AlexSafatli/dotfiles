@@ -16,7 +16,7 @@
   b = branch
   ec = config --global -e
   sync = !"git pull --rebase --prune $@ && git submodule update --init --recursive"
-  cm = !"git add -A && git commit -m"
+  cm = !"git add -A && git commit"
   wipe = !"git add -A && git commit -qm 'WIPE-SAVEPOINT' && git reset HEAD~1 --hard"
   bclean = !"f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -d; }; f"
   done = !"f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
