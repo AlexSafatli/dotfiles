@@ -23,4 +23,4 @@ Sublime:
 assets:
 	-mkdir ~/.commit-messages/
 	cp assets/random-commit-msg.py /usr/local/bin/random-commit
-	cp assets/anime ~/.commit-messages/
+	cp assets/commit-messages/* ~/.commit-messages/
