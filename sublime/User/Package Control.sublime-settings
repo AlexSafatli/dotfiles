@@ -1,4 +1,5 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -6,8 +7,9 @@
 	[
 		"BracketHighlighter",
 		"CoffeeScript",
+		"Dayle Rees Color Schemes",
 		"GitGutter",
-		"Gitignored File Excluder",
+		"NASM x86 Assembly",
 		"Package Control",
 		"Ruby Slim",
 		"Sass"
