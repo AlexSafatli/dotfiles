@@ -4,6 +4,12 @@ function ruby_env {
 
 }
 
+function golang_env {
+
+  export GOPATH=~/.go
+
+}
+
 function setup_terminal {
 
   # Enable Colors in Mac Terminal
@@ -28,7 +34,8 @@ function all {
 
   setup_terminal
   ruby_env
-  
+  golang_env  
+
 }
 
 all
