@@ -10,7 +10,7 @@ Darwin:
 	osx/defaults.sh
 	cp osx/.[a-zA-Z0-9]* ~
 	$(eval SUBLIME_PREFS = ~/Library/Application\ Support/Sublime\ Text\ 3/Packages)
-	-ln -s /Applications/Sublime\ Text\ 3.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+	-ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 
 Linux:
 	# Linux
