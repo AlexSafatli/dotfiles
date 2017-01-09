@@ -1,5 +1,4 @@
 alias untar="tar -xzvf"
 alias notes="subl ~/Dropbox/Notes/"
-alias ls="ls --color=auto"
 alias la="ls -a"
 alias ..="cd .."

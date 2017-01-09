@@ -6,7 +6,9 @@ function ruby_env {
 
 function golang_env {
 
-  export GOPATH=~/.go
+  export GOPATH=$HOME/go
+  export GOROOT=$HOME/go
+  export PATH=$PATH:$GOROOT/bin:/usr/local/go/bin
 
 }
 
@@ -22,11 +24,11 @@ function setup_terminal {
   export EDITOR='subl -n -w' # Sublime Text 2
 
   # Source Appropriate Files
-  source ~/.colors # Variables for Bash Prompt Colors
-  source ~/.git-prompt.sh # From Git -- Allows Reading Names of Repo/Branch to PS1
-  source ~/.git-completion.bash # From Git -- Allows Autocompletion
-  source ~/.prompt # Setup PS1 Prompt
-  source ~/.aliases # Terminal Aliases
+  source $HOME/.colors # Variables for Bash Prompt Colors
+  source $HOME/.git-prompt.sh # From Git -- Allows Reading Names of Repo/Branch to PS1
+  source $HOME/.git-completion.bash # From Git -- Allows Autocompletion
+  source $HOME/.prompt # Setup PS1 Prompt
+  source $HOME/.aliases # Terminal Aliases
 
 }
 
