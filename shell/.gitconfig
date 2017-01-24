@@ -6,19 +6,19 @@
 [github]
 	user = AlexSafatli
 [push]
-	default = matching
+	default = simple
+[branch]
+        autosetuprebase = always
 [alias]
   upstream = remote add upstream
-  up = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
-  st = status
   co = checkout
-  new = checkout -b
+  new = co -b
   b = branch
-  ec = config --global -e
+  rmbranch = b -d
   sync = !"git pull --rebase --prune $@ && git submodule update --init --recursive"
   cm = !"git add -A && git commit"
   desu = !"random-commit ~/.commit-messages/anime | git cm -F-"
   wipe = !"git add -A && git commit -qm 'WIPE-SAVEPOINT' && git reset HEAD~1 --hard"
-  bclean = !"f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -d; }; f"
-  done = !"f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
+  cleanup = !"f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -d; }; f"
+  done = !"f() { git co ${1-master} && git sync && git cleanup ${1-master}; }; f"
   l = log --graph --pretty=oneline --abbrev-commit
