@@ -15,7 +15,7 @@
   new = co -b
   b = branch
   rmbranch = b -d
-  sync = !"git pull --rebase --prune $@ && git submodule update --init --recursive"
+  sync = !"git pull --rebase --prune $@ && git submodule foreach --recursive git checkout . && git submodule update --init --recursive"
   cm = !"git add -A && git commit"
   desu = !"random-commit ~/.commit-messages/anime | git cm -F-"
   wipe = !"git add -A && git commit -qm 'WIPE-SAVEPOINT' && git reset HEAD~1 --hard"
