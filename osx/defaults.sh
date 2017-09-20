@@ -53,5 +53,8 @@ defaults write com.apple.DiskUtility DUDebugMenuEnabled 1
 
 # Misc
 
+## Mouse acceleration disable.
+defaults write .GlobalPreferences com.apple.mouse.scaling -1
+
 ## Use AirDrop over every interface.
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
