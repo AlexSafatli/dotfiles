@@ -1,2 +1,2 @@
 # dotfiles
-Personal Preferences and Settings for a UNIX Environment
+Personal Preferences and Settings
