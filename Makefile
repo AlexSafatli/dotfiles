@@ -14,6 +14,8 @@ Darwin:
 	# Mac OS X
 	osx/defaults.sh
 	cp osx/.[a-zA-Z0-9]* ~
+        osx/homebrew.sh
+	osx/zsh.sh
 	$(eval SUBLIME_PREFS = ~/Library/Application\ Support/Sublime\ Text\ 3/Packages)
 	-ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 
