@@ -7,7 +7,6 @@
 	[
 		"Babel",
 		"CoffeeScript",
-		"GitGutter",
 		"gruvbox",
 		"NASM x86 Assembly",
 		"Package Control",
