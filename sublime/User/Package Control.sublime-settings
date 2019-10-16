@@ -5,13 +5,13 @@
 	],
 	"installed_packages":
 	[
-		"BracketHighlighter",
+		"Babel",
 		"CoffeeScript",
-		"Dayle Rees Color Schemes",
-		"GitGutter",
+		"gruvbox",
 		"NASM x86 Assembly",
 		"Package Control",
 		"Ruby Slim",
-		"Sass"
+		"Sass",
+		"TypeScript Syntax"
 	]
 }
