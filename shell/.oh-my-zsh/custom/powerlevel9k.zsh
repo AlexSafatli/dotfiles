@@ -1,0 +1,4 @@
+POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs battery time)
+POWERLEVEL9K_BATTERY_VERBOSE=false
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=3

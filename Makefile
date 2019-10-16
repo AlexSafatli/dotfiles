@@ -7,7 +7,7 @@ else
 endif
 
 all: $(onOS) Sublime assets
-	cp shell/.[a-zA-Z0-9]* ~
+	cp -R shell/.[a-zA-Z0-9]* ~
 	cp vendor/.[a-zA-Z0-9]* ~
 
 Darwin:
