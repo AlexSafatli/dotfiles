@@ -1,12 +1,12 @@
 .PHONY: Linux Darwin Sublime assets all
 
 ifeq ($(OS),Windows_NT)
-	onOS := Windows
+	hostOS := Windows
 else
-	onOS := $(shell uname)
+	hostOS := $(shell uname)
 endif
 
-all: $(onOS) Sublime assets
+all: $(hostOS) Sublime assets
 	cp -R shell/.[a-zA-Z0-9]* ~
 	cp vendor/.[a-zA-Z0-9]* ~
 
@@ -22,7 +22,7 @@ Darwin:
 Linux:
 	# Linux
 	-cp linux/.[a-zA-Z0-9]* ~
-	$(eval SUBLIME_PREFS = ~/.config/sublime-text-2/Packages)
+	$(eval SUBLIME_PREFS = ~/.config/sublime-text-3/Packages)
 
 Windows:
 	# Windows XP, 2000, 7, Vista, 10, ...
