@@ -1,6 +1,6 @@
 # dotfiles
 
-Personal Preferences and Settings for Alex Safatli
+Personal Preferences and Settings for a Windows, Mac OS X, or UNIX Environment
 
 ## Requirements
 
