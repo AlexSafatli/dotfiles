@@ -30,7 +30,12 @@ Sublime Text, but you need to install
 2. Type `install`
 3. Select the option to install Package Control
 
+## Planned Additions
+
+- Windows machine setup automation using [Boxstarter](https://boxstarter.org/). See related reading below.
+
 ## Related Reading and Projects
 
 - https://edaoud.com/blog/2020/02/01/automate-your-computer-setup-dotfiles/
 - https://github.com/mattbrictson/dotfiles
+- https://dev.to/kasuken/from-a-windows-10-clean-installation-to-a-dev-environment-in-30-minutes-with-boxstarter-41n2
