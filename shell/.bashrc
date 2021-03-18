@@ -36,7 +36,7 @@ function all {
 
   setup_terminal
   ruby_env
-  golang_env  
+  golang_env
 
 }
 

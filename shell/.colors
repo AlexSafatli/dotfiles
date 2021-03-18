@@ -1,4 +1,6 @@
 # Acquired from http://mediadoneright.com/content/ultimate-git-ps1-bash-prompt
+# Since that original link (2021) is a dead link now, here is another source:
+# https://github.com/ryanoasis/public-bash-scripts/blob/master/ultimate-git-ps1-bash-prompt.sh
 
 # Reset
 ColorOff="\[\033[0m\]"       # Text Reset
